@@ -29,15 +29,33 @@
         />
       </div>
       <!-- Image Part -->
-      <img
-        class="img-fluid"
-        src="./images/piggy-saving.jpg"
-        alt=""
-        srcset=""
-        width="500"
-      />
-      <!-- Calculation Part -->
-      
+      <div class="d-md-flex justify-content-around">
+        <img
+          class="img-fluid"
+          src="./images/piggy-saving.jpg"
+          alt=""
+          srcset=""
+          width="500"
+        />
+        <!-- Calculation Part -->
+        <div class="calculation-bg text-center">
+          <form>
+            <h4>Income</h4>
+            <label for="">Income:</label>
+            <input type="text">
+            <h4>Expenses</h4>
+            <label for="">Food: </label>
+            <input type="text" />
+            <label for="">Rent: </label>
+            <input type="text">
+            <label for="">Pocket Money: </label>
+            <input type="text">
+          </form>
+          <button class="btn mb-4">Calculate</button>
+          <h4>Total Expenses: </h4>
+          <h4>Balance: </h4>
+        </div>
+      </div>
     </section>
 
     <!-- Bootstrap JS -->

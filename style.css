@@ -1,4 +1,17 @@
 #heading{
     color: palevioletred;
     margin-top: 55px;
-};
+}
+.btn{
+   background-color: rgba(0, 0, 255, 0.61);
+   color: white;
+   width: 150px;
+}
+.calculation-bg{
+    background-color: beige;
+    width: 450px;
+}
+label{
+    width: 200px;
+    height: 50px;
+}
