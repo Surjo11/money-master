@@ -42,7 +42,7 @@
           <form>
             <h4>Income</h4>
             <label for="">Income:</label>
-            <input type="number" />
+            <input id="monthly-income" type="number" />
             <h4>Expenses</h4>
             <label for="">Food: </label>
             <input id="food-cost" type="number" />
@@ -52,8 +52,8 @@
             <input id="pocket-cost" type="number" />
           </form>
           <button id="calculate-btn" class="btn mt-4 mb-4">Calculate</button>
-          <h4>Total Expenses:</h4>
-          <h4>Balance:</h4>
+          <h4>Total Expenses: <span id="total"></span></h4>
+          <h4>Balance: <span id="remaining-balance"></span></h4>
         </div>
       </div>
     </section>
