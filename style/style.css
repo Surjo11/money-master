@@ -5,6 +5,7 @@
 .income{
   display: none;
 }
+/* Calculation Button */
 .btn {
   background-color: rgba(0, 0, 255, 0.61);
   color: white;
