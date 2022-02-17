@@ -2,6 +2,9 @@
   color: palevioletred;
   margin-top: 55px;
 }
+.income{
+  display: none;
+}
 .btn {
   background-color: rgba(0, 0, 255, 0.61);
   color: white;
@@ -13,8 +16,10 @@
 }
 label {
   width: 200px;
-  height: 50px;
+  height: 70px;
 }
+
+/* Media Queries */
 @media only screen and (min-width: 480px) {
   .calculation-bg {
     width: 450px;
