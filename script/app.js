@@ -3,6 +3,7 @@ document
   .getElementById("calculate-button")
   .addEventListener("click", function () {
     let income = document.getElementById("monthly-income").value;
+    // Error Handel
     if (income < 0 || isNaN(income)) {
       return alert(
         '❌Error in INCOME field❌: Please Fill with "Positive Number"'
@@ -29,6 +30,10 @@ document
     let totalCost = Number(foodCost) + Number(rentCost) + Number(pocketCost);
     let expenses = document.getElementById("total");
     expenses.innerText = totalCost;
+    // Error Handel
+    if (income < expenses.innerText) {
+      return alert("❌Alass! You expense more money than your income❌");
+    }
     let remainingBalance = Number(income) - totalCost;
     let balance = document.getElementById("total-balance");
     balance.innerText = remainingBalance;
@@ -43,6 +48,10 @@ document.getElementById("save-button").addEventListener("click", function () {
   saveAmount.innerText = saveCalculation;
   let totalBalance = document.getElementById("total-balance");
   let balance = Number(totalBalance.innerText) - Number(saveAmount.innerText);
+  // Error Handel
+  if (Number(totalBalance.innerText) < Number(saveAmount.innerText)) {
+    return alert("❌SORRY! You can't Save! ❌");
+  }
   let remainingBalance = document.getElementById("remain-balance");
   remainingBalance.innerText = balance;
 });
